@@ -1,0 +1,96 @@
+2023-08-27 00:27:36.700  INFO 15108 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : Starting EcommerceTestApplication using Java 11.0.17 on Enocks-PC with PID 15108 (D:\Development\G-ECONOMY\Interview Cases\microservice-setup\ecommerce-test\build\classes\java\main started by Enock-M in D:\Development\G-ECONOMY\Interview Cases\microservice-setup\ecommerce-test)
+2023-08-27 00:27:36.701  INFO 15108 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-08-27 00:27:36.742  INFO 15108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-27 00:27:36.743  INFO 15108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-27 00:27:37.567  INFO 15108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 00:27:37.583  INFO 15108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2023-08-27 00:27:38.213  INFO 15108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-08-27 00:27:38.219  INFO 15108 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-27 00:27:38.219  INFO 15108 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-08-27 00:27:38.282  INFO 15108 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-27 00:27:38.283  INFO 15108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1540 ms
+2023-08-27 00:27:38.306  INFO 15108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-27 00:27:38.423  INFO 15108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-27 00:27:38.438  INFO 15108 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:00c54aab-2eb5-4845-84e9-0f7f4a3fd77e'
+2023-08-27 00:27:38.543  INFO 15108 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 00:27:38.579  INFO 15108 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-08-27 00:27:38.695  INFO 15108 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-27 00:27:38.780  INFO 15108 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-27 00:27:38.928  INFO 15108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 00:27:38.937  INFO 15108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 00:27:39.119  WARN 15108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 00:27:39.392  INFO 15108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-27 00:27:39.562  INFO 15108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-08-27 00:27:39.727  INFO 15108 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : Started EcommerceTestApplication in 3.426 seconds (JVM running for 5.267)
+2023-08-27 00:27:54.788  INFO 15108 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 00:27:54.790  INFO 15108 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-27 00:27:54.793  INFO 15108 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-08-27 00:28:24.416  INFO 15108 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 00:28:24.416  INFO 15108 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-08-27 00:28:24.638  WARN 15108 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-08-27 00:28:24.639  INFO 15108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-27 00:28:24.646  INFO 15108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-27 00:30:14.231  INFO 21196 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : Starting EcommerceTestApplication using Java 11.0.17 on Enocks-PC with PID 21196 (D:\Development\G-ECONOMY\Interview Cases\microservice-setup\ecommerce-test\build\classes\java\main started by Enock-M in D:\Development\G-ECONOMY\Interview Cases\microservice-setup\ecommerce-test)
+2023-08-27 00:30:14.233  INFO 21196 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-08-27 00:30:14.278  INFO 21196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-27 00:30:14.278  INFO 21196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-27 00:30:15.083  INFO 21196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 00:30:15.095  INFO 21196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-08-27 00:30:15.640  INFO 21196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-08-27 00:30:15.647  INFO 21196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-27 00:30:15.647  INFO 21196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-08-27 00:30:15.710  INFO 21196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-27 00:30:15.710  INFO 21196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1431 ms
+2023-08-27 00:30:15.734  INFO 21196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-27 00:30:15.834  INFO 21196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-27 00:30:15.845  INFO 21196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e4bf714d-8ccf-4032-9b5e-5a2040abde92'
+2023-08-27 00:30:15.951  INFO 21196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 00:30:15.987  INFO 21196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-08-27 00:30:16.108  INFO 21196 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-27 00:30:16.184  INFO 21196 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-27 00:30:16.333  INFO 21196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 00:30:16.344  INFO 21196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 00:30:16.548  WARN 21196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 00:30:16.784  INFO 21196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-27 00:30:16.953  INFO 21196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-08-27 00:30:17.001  INFO 21196 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : Started EcommerceTestApplication in 3.126 seconds (JVM running for 4.129)
+2023-08-27 00:30:25.910  INFO 21196 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 00:30:25.911  INFO 21196 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-27 00:30:25.915  INFO 21196 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-27 00:30:56.702  INFO 21196 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 00:30:56.702  INFO 21196 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-08-27 00:30:56.921  WARN 21196 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-08-27 00:30:56.922  INFO 21196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-27 00:30:56.927  INFO 21196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-27 00:31:12.999  INFO 21744 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : Starting EcommerceTestApplication using Java 11.0.17 on Enocks-PC with PID 21744 (D:\Development\G-ECONOMY\Interview Cases\microservice-setup\ecommerce-test\build\classes\java\main started by Enock-M in D:\Development\G-ECONOMY\Interview Cases\microservice-setup\ecommerce-test)
+2023-08-27 00:31:13.001  INFO 21744 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-08-27 00:31:13.042  INFO 21744 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-27 00:31:13.042  INFO 21744 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-27 00:31:14.216  INFO 21744 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 00:31:14.236  INFO 21744 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-08-27 00:31:14.852  INFO 21744 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-08-27 00:31:14.859  INFO 21744 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-27 00:31:14.859  INFO 21744 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-08-27 00:31:14.927  INFO 21744 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-27 00:31:14.927  INFO 21744 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1884 ms
+2023-08-27 00:31:14.951  INFO 21744 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-27 00:31:15.050  INFO 21744 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-27 00:31:15.063  INFO 21744 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b0d6c174-21f2-473a-ac52-c0eea4f297d1'
+2023-08-27 00:31:15.159  INFO 21744 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 00:31:15.195  INFO 21744 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-08-27 00:31:15.306  INFO 21744 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-27 00:31:15.392  INFO 21744 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-27 00:31:15.531  INFO 21744 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 00:31:15.542  INFO 21744 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 00:31:15.802  WARN 21744 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 00:31:16.029  INFO 21744 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-27 00:31:16.207  INFO 21744 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-08-27 00:31:16.249  INFO 21744 --- [restartedMain] com.ecommerce.EcommerceTestApplication   : Started EcommerceTestApplication in 3.61 seconds (JVM running for 4.583)
+2023-08-27 00:31:16.564  INFO 21744 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 00:31:16.565  INFO 21744 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-27 00:31:16.568  INFO 21744 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-27 00:31:44.687  INFO 21744 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 00:31:44.687  INFO 21744 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-08-27 00:31:44.901  WARN 21744 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-08-27 00:31:44.902  INFO 21744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-27 00:31:44.907  INFO 21744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
