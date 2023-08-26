@@ -26,8 +26,8 @@ public class SpringFox {
 
     private ApiInfo getApiInformation() {
         return new ApiInfoBuilder()
-                .title("Basic Microservice Architecture ")
-                .description("This is a sample implementation of a Basic Microservice Architecture")
+                .title("Order Service Solution")
+                .description("This is a sample implementation of the Order Service Solution")
                 .version("1.0")
                 .build();
     }
