@@ -5,6 +5,7 @@ import com.orderservice.entity.Order;
 import com.orderservice.payloads.requests.CreateOrderRequest;
 import com.orderservice.payloads.responses.GenericResponse;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface IOrderService {
@@ -16,6 +17,8 @@ public interface IOrderService {
     Order updateOrder(Order order);
 
     Optional<Order> findOrderById(Long orderId);
+
+    List<Order> getAllOrders();
 
 
 }
