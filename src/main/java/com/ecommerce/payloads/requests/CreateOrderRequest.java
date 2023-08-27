@@ -1,6 +1,6 @@
 package com.ecommerce.payloads.requests;
 
-import com.ecommerce.constants.Status;
+import com.ecommerce.utils.Constants;
 import lombok.Builder;
 import lombok.Data;
 
@@ -18,5 +18,5 @@ public class CreateOrderRequest {
     private Long product_id;
 
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private Constants.Status status;
 }

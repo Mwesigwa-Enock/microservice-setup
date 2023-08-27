@@ -1,4 +1,4 @@
-package com.ecommerce.swaggerui;
+package com.ecommerce.Config;
 
 
 import org.springframework.context.annotation.Bean;
