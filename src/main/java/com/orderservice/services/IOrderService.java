@@ -1,7 +1,7 @@
 package com.orderservice.services;
 
 
-import com.orderservice.models.Order;
+import com.orderservice.entity.Order;
 import com.orderservice.payloads.requests.CreateOrderRequest;
 import com.orderservice.payloads.responses.GenericResponse;
 

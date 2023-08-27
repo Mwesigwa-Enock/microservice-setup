@@ -1,11 +1,10 @@
 package com.orderservice.repositories;
 
-import com.orderservice.models.Order;
+import com.orderservice.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface OrderRepository extends JpaRepository<Order, Long> {
-
 
 }

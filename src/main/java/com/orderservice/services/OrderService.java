@@ -1,9 +1,13 @@
 package com.orderservice.services;
 
 
-import com.orderservice.models.Customer;
-import com.orderservice.models.Order;
-import com.orderservice.models.Product;
+import com.orderservice.entity.Customer;
+import com.orderservice.entity.Order;
+import com.orderservice.entity.Product;
+import com.orderservice.models.NotificationRequest;
+import com.orderservice.models.NotificationResponse;
+import com.orderservice.models.ShippingRequest;
+import com.orderservice.models.ShippingResponse;
 import com.orderservice.payloads.requests.CreateOrderRequest;
 import com.orderservice.payloads.responses.GenericResponse;
 import com.orderservice.repositories.CustomerRepository;
@@ -22,11 +26,17 @@ public class OrderService implements IOrderService {
     private final CustomerRepository customerRepository;
     private final ProductRepository productRepository;
 
-    public OrderService(OrderRepository orderRepository, CustomerRepository customerRepository, ProductRepository productRepository) {
+    private final ShippingService shippingService;
+    private final NotificationService notificationService;
+
+    public OrderService(OrderRepository orderRepository, CustomerRepository customerRepository, ProductRepository productRepository, ShippingService shippingService, NotificationService notificationService) {
         this.orderRepository = orderRepository;
         this.customerRepository = customerRepository;
         this.productRepository = productRepository;
+        this.shippingService = shippingService;
+        this.notificationService = notificationService;
     }
+
 
     @Override
     public GenericResponse createOrder(CreateOrderRequest request) {
@@ -39,7 +49,27 @@ public class OrderService implements IOrderService {
                 .shopping_cart_id(request.getShopping_cart_id())
                 .status(String.valueOf(request.getStatus()))
                 .build();
-        orderRepository.save(order);
+        Order created = orderRepository.save(order);
+        //Orchestration of the service calls
+        //send shipment
+        ShippingRequest shippingRequest = ShippingRequest.builder()
+                .order_id(created.getOrder_id())
+                .customer_id(created.getCustomer().getCustomer_id())
+                .build();
+
+
+        ShippingResponse shippingResponse = shippingService.sendShipmentDetails(shippingRequest);
+        logger.info("Shipping Response: " + shippingResponse);
+
+        //send Notification
+        NotificationRequest notificationRequest = NotificationRequest.builder()
+                .customer_id(created.getCustomer().getCustomer_id())
+                .message("Order completed")
+                .build();
+        NotificationResponse notificationResponse = notificationService.sendNotification(notificationRequest);
+        logger.info("Notification Response: " + notificationResponse);
+
+
         return GenericResponse.builder()
                 .message("Order Received")
                 .status(true)

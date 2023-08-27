@@ -1,7 +1,7 @@
 package com.orderservice.utils;
 
-import com.orderservice.models.Customer;
-import com.orderservice.models.Product;
+import com.orderservice.entity.Customer;
+import com.orderservice.entity.Product;
 import com.orderservice.repositories.CustomerRepository;
 import com.orderservice.repositories.ProductRepository;
 import org.slf4j.Logger;
