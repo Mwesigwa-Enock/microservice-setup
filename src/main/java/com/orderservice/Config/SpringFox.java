@@ -18,7 +18,7 @@ public class SpringFox {
     public Docket api(){
         return new Docket(DocumentationType.OAS_30)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.ecommerce"))
+                .apis(RequestHandlerSelectors.basePackage("com.orderservice"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(getApiInformation());
