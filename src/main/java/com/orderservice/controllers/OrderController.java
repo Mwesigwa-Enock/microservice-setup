@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -46,7 +47,6 @@ public class OrderController {
         }
     }
 
-
     @DeleteMapping("order/{id}")
     @ApiOperation(value = "Delete Order By Id")
     public ResponseEntity<?> deleteOrderById(@PathVariable Long id) {
@@ -60,5 +60,14 @@ public class OrderController {
     public ResponseEntity<?> updateOrder(@RequestBody Order order) {
         Order response = orderService.updateOrder(order);
         return ResponseEntity.status(HttpStatus.OK).body(response);
+    }
+
+    @GetMapping("orders")
+    @ApiOperation(value = "Get All Processed Orders")
+    public ResponseEntity<?> getOrders() {
+        List<Order> order = orderService.getAllOrders();
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(order);
+
     }
 }
