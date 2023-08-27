@@ -1,10 +1,9 @@
-package com.ecommerce.services;
+package com.orderservice.services;
 
 
-
-import com.ecommerce.models.Order;
-import com.ecommerce.payloads.requests.CreateOrderRequest;
-import com.ecommerce.payloads.responses.GenericResponse;
+import com.orderservice.models.Order;
+import com.orderservice.payloads.requests.CreateOrderRequest;
+import com.orderservice.payloads.responses.GenericResponse;
 
 import java.util.Optional;
 

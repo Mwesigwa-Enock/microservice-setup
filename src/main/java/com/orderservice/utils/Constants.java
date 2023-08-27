@@ -1,9 +1,10 @@
-package com.ecommerce.utils;
+package com.orderservice.utils;
 
 public class Constants {
     public static enum Status {
         Pending,
         Submitted,
-        Processed
+        Processed,
+        Received
     }
 }

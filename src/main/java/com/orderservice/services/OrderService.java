@@ -1,14 +1,14 @@
-package com.ecommerce.services;
+package com.orderservice.services;
 
 
-import com.ecommerce.models.Customer;
-import com.ecommerce.models.Order;
-import com.ecommerce.models.Product;
-import com.ecommerce.payloads.requests.CreateOrderRequest;
-import com.ecommerce.payloads.responses.GenericResponse;
-import com.ecommerce.repositories.CustomerRepository;
-import com.ecommerce.repositories.OrderRepository;
-import com.ecommerce.repositories.ProductRepository;
+import com.orderservice.models.Customer;
+import com.orderservice.models.Order;
+import com.orderservice.models.Product;
+import com.orderservice.payloads.requests.CreateOrderRequest;
+import com.orderservice.payloads.responses.GenericResponse;
+import com.orderservice.repositories.CustomerRepository;
+import com.orderservice.repositories.OrderRepository;
+import com.orderservice.repositories.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

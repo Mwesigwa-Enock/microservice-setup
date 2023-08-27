@@ -1,6 +1,6 @@
-package com.ecommerce.payloads.requests;
+package com.orderservice.payloads.requests;
 
-import com.ecommerce.utils.Constants;
+import com.orderservice.utils.Constants;
 import lombok.Builder;
 import lombok.Data;
 

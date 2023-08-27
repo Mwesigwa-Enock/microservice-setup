@@ -1,10 +1,10 @@
-package com.ecommerce.controllers;
+package com.orderservice.controllers;
 
 
-import com.ecommerce.models.Order;
-import com.ecommerce.payloads.requests.CreateOrderRequest;
-import com.ecommerce.payloads.responses.GenericResponse;
-import com.ecommerce.services.OrderService;
+import com.orderservice.models.Order;
+import com.orderservice.payloads.requests.CreateOrderRequest;
+import com.orderservice.payloads.responses.GenericResponse;
+import com.orderservice.services.OrderService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,11 +1,9 @@
-package com.ecommerce.utils;
+package com.orderservice.utils;
 
-
-
-import com.ecommerce.models.Customer;
-import com.ecommerce.models.Product;
-import com.ecommerce.repositories.CustomerRepository;
-import com.ecommerce.repositories.ProductRepository;
+import com.orderservice.models.Customer;
+import com.orderservice.models.Product;
+import com.orderservice.repositories.CustomerRepository;
+import com.orderservice.repositories.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
