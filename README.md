@@ -2,6 +2,7 @@
 
 This document explains the backend API which for Order Service Microservice
 The service receives an order, creates a record in the database, then calls th shipping service and notification service.
+<img src="./images/architecture.png" />
 
 ## Project Basics
 ### Java Version
@@ -24,6 +25,7 @@ When the application is run locally, it launches the tomcat server running on:
 ### API Documentation
 - The API documentation has been done using Swagger Docs - version 3
 - Once the application is run, the documentation page can be accessed through [Swagger UI](http://localhost:8000/swagger-ui/index.html)
+<img src="./images/swagger-ui.png" />
 
 
 

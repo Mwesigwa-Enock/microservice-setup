@@ -43,8 +43,8 @@ public class DataSeedBuilder {
                     .last_name("User1")
                     .build();
             List<Customer> customerList = Arrays.asList(enock, testUser1, testUser);
-            customerRepository.saveAll(customerList);
-            Iterable<Customer> customers = customerRepository.findAll();
+            Iterable<Customer> customers = customerRepository.saveAll(customerList);
+           // Iterable<Customer> customers = customerRepository.findAll();
             customers.forEach(System.out::println);
 
             logger.info("=======================Preloading Products data=================================");
