@@ -1,4 +1,4 @@
-package com.orderservice.models;
+package com.orderservice.entity;
 
 
 import lombok.AllArgsConstructor;
